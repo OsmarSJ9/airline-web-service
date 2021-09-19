@@ -3,7 +3,6 @@ package com.asus.flight.service;
 import java.util.List;
 
 import com.asus.flight.dto.FlightDto;
-import com.asus.flight.entity.Flight;
 
 public interface FlightService {
 

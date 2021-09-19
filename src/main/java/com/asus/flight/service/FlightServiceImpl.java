@@ -89,9 +89,8 @@ public class FlightServiceImpl implements FlightService {
 
 		List<FlightDto> flightDtoList = new ArrayList<FlightDto>();
 
-		FlightDto flightDto = null;
 		for (int i = 0; i < flightList.size(); i++) {
-			flightDto = new FlightDto();
+			FlightDto flightDto = new FlightDto();
 			BeanUtils.copyProperties(flightList.get(i), flightDto);
 			flightDtoList.add(flightDto);
 			logger.info(" " + flightDtoList.get(i));
